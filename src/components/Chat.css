@@ -1,3 +1,8 @@
 .chat-container {
     padding-bottom: 5px;
 }
+
+.author {
+    color: rgb(14, 22, 99);
+    font-style: italic;
+}
