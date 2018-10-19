@@ -21,7 +21,7 @@ class Chat extends React.Component{
             messages: []
         };
 
-        this.socket = io('localhost:8080');
+        this.socket = io('52.14.229.151:8080');
 
         this.socket.on('disconnected', function(data) {
             removeClient(data)
