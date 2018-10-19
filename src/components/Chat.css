@@ -11,3 +11,7 @@
     color: rgb(201, 60, 109);
     font-style: italic;
 }
+
+.alert {
+    color: red;
+}

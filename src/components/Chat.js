@@ -113,7 +113,7 @@ class Chat extends React.Component{
                 {this.state.ids.map((client, i) => {
                     return(     
                     <div key={client.id} data-tag={client.id} className='chat-container' onClick={()=> {this.setState({recipient: client.id})}}>
-                    <ExpansionPanel expanded={this.state.expanded === i} onChange={this.handleChange(i)}>
+                    <ExpansionPanel className={this.state.active} expanded={this.state.expanded === i} onChange={this.handleChange(i)}>
                         <ExpansionPanelSummary>
                         <Typography>{client.username}</Typography>
                         </ExpansionPanelSummary>
