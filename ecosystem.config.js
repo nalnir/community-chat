@@ -39,7 +39,7 @@ module.exports = {
 
             user: 'ubuntu',
 
-            key: "/Users/Juico/.ssh/id_rsa",
+            // key: "/Users/Juico/.ssh/id_rsa",
 
             host: ['52.14.229.151'],
 
