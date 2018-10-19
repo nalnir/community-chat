@@ -132,6 +132,11 @@ class Chat extends React.Component{
                                                 <div><img src='https://vignette.wikia.nocookie.net/polandball/images/6/69/Forever-alone-400x400.png/revision/latest?cb=20160311230442'/></div>
                                             )
                                         }
+                                        if(message.recipient === client.id && message.recipient !== this.socket.id) {
+                                            return (
+                                                <div><span className="client">Me:</span> {message.message}</div>
+                                            )
+                                        }
                                     })}
                                 </div>
                                 <div className="card-footer">
