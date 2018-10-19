@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "concurrently 'npm run react' 'npm run server'",
-    "prod": "git add . && git commit -m 'deploy chat to instance' && pm2 deploy production",
+    "prod": "git add . && git commit -m 'deploy chat to instance' && git push -u origin master && pm2 deploy production",
     "react": "react-scripts start",
     "server": "nodemon src/server/index.js",
     "build": "react-scripts build",
