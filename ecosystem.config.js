@@ -64,9 +64,9 @@ module.exports = {
                 "echo 'This is a local executed command'",
             'post-deploy':
                 'sudo npm install && ' +
-                'sudo pm2 reload ecosystem.config.js --env production && ' +
-                'sudo pm2 restart community-chat && ' +
-                'sudo pm2 start'
+                'sudo pm2 reload ecosystem.config.js --env production '
+             //   'sudo pm2 restart ch && ' +
+             //   'sudo pm2 start'
         },
     }
 };
