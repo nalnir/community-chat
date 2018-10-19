@@ -4,7 +4,7 @@ module.exports = {
     apps: [
         // First application
         {
-            name: 'community-chat',
+            name: 'ch',
             script: 'npm start',
             env: {
                 COMMON_VARIABLE:
