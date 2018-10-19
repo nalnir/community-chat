@@ -14,14 +14,14 @@ class Chat extends React.Component{
         this.state = {
             expanded: null,
             ids: [],
-            // id: '',
+            // id: '',   
             recipient: '',
             sender: '',
             message: '',
             messages: []
         };
-
-        this.socket = io('52.14.229.151:8080');
+        // 52.14.229.151
+        this.socket = io('localhost:8080');
 
         this.socket.on('disconnected', function(data) {
             removeClient(data)
