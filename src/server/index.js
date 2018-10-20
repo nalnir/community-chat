@@ -19,7 +19,7 @@ var arrOfClients = []
 
 io.on('connection', (socket) => {
     // let url2 = socket.handshake.headers.referer.match(/(\?.*&)/)[0].split('&')[0]
-    let url = '?' + socket.handshake.headers.referer.split('?')[1]
+    let url = '?' + socket.handshake.headers.referer.split('?')[1].split('&')[0]
     // console.log(url)
     // console.log(socket.id)
 
