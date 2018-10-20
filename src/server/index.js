@@ -22,7 +22,8 @@ io.on('connection', (socket) => {
     if (!socket.handshake.headers.referer) {
         return 'loading'
     }
-    let url = '?' + socket.handshake.headers.referer.split('?')[1].split('&')[0]
+    let url = '?' + socket.handshake.headers.referer.split('?')[1]
+    url = url.split('&')[0]
     console.log(url)
     // console.log(socket.id)
 
