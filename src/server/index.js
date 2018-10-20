@@ -18,9 +18,10 @@ var arrOfClients = []
 
 
 io.on('connection', (socket) => {
-    let url = socket.handshake.headers.referer.match(/(\?.*&)/)[0].split('&')[0]
-    console.log(url)
-    console.log(socket.id)
+    // let url2 = socket.handshake.headers.referer.match(/(\?.*&)/)[0].split('&')[0]
+    let url = '?' + socket.handshake.headers.referer.split('?')[1]
+    // console.log(url)
+    // console.log(socket.id)
 
     io.emit('client', {id: socket.id, url: url, clients: Object.keys(socket.nsp.connected)})
     
